@@ -8,6 +8,8 @@ This project is for computer science students in evolutionary computations cours
 Facultad de Ciencias, UNAM 
 Semester 2021-1
 
+Languaje Python
+
 ## Autors
 Oscar Hernandez Constantino
 Christian Rafael Garcia
