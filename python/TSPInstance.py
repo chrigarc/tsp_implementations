@@ -25,6 +25,9 @@ class TSPInstance:
   def getNode(self, id):
     assert id > 0 and id <= self.dim, 'Id Incorrecto para la dimensión del problema'
     return self.nodes[id-1]
+
+  def getDistance(self, id1, id2):
+    return self.distancias[id1-1][id2-1]
   
   def calcularDistancias(self):
     nodos = self.nodes

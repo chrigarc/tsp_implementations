@@ -7,7 +7,6 @@ def main(argv):
     assert os.path.isfile(argv[0]), 'El archivo no existe'
     tspInstance = TSPInstance.readFile(argv[0])
     assert tspInstance, 'Error al leer la instancia'
-    print(tspInstance.distancias)
 
 
 
