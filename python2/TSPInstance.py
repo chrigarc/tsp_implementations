@@ -60,6 +60,9 @@ def readFile(fileName, verbose=False):
           if line.startswith('EOF'): continue
           if line.startswith('COMMENT'): continue
           if nodeCoord:
+            line = line.strip()
+            line = line.replace("   ", " ")
+            line = line.replace("  ", " ")
             coords = line.split(' ')
             id = int(coords[0].strip())
             tsp.addNode(id, float(coords[1].strip()), float(coords[2].strip())) 
